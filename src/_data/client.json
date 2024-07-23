@@ -1,13 +1,13 @@
 {
-    "name": "Code Stitch Web Designs",
+    "name": "Biscotti Streetwear",
     "email": "help@codestitch.app",
     "phoneForTel": "555-123-4567",
     "phoneFormatted": "(555) 123-4567",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
+        "city": "Burlington",
+        "state": "VT",
         "zip": "80206",
         "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
     },

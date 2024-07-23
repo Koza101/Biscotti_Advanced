@@ -1,20 +1,20 @@
 {
     "name": "Code Stitch Web Designs",
     "email": "help@codestitch.app",
-    "phoneForTel": "802-598-8662",
-    "phoneFormatted": "(802) 598-8662",
+    "phoneForTel": "555-123-4567",
+    "phoneFormatted": "(555) 123-4567",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
-        "city": "Burlington",
-        "state": "VT",
+        "city": "Denver",
+        "state": "CO",
         "zip": "80206",
         "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
     },
     "social": {
         "facebook": "https://www.facebook.com/",
         "twitter": "https://twitter.com/",
-        "instagram": "https://www.instagram.com/biscottistreetwear/",
+        "instagram": "https://www.instagram.com/",
         "youtube": "https://www.youtube.com/"
     },
     "domain": "https://www.codestitch.app"

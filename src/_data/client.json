@@ -4,18 +4,18 @@
     "phoneForTel": "555-123-4567",
     "phoneFormatted": "(555) 123-4567",
     "address": {
-        "lineOne": "First Address Line",
+        "lineOne": "301 Pearl Street Suite 202 #144",
         "lineTwo": "Second Address Line",
-        "city": "Burlington",
+        "city": "St. Johnsbury",
         "state": "VT",
-        "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "zip": "05819",
+        "mapLink": "https://maps.app.goo.gl/uMk4k7pgcoJ6K1B27"
     },
     "social": {
         "facebook": "https://www.facebook.com/",
         "twitter": "https://twitter.com/",
-        "instagram": "https://www.instagram.com/",
+        "instagram": "https://www.instagram.com/biscottistreetwear/",
         "youtube": "https://www.youtube.com/"
     },
-    "domain": "https://www.codestitch.app"
+    "domain": "https://www.biscottistreetwear.com"
 }

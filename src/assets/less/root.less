@@ -1,6 +1,48 @@
 /*-- -------------------------- -->
 <---         Core Styles        -->
 <--- -------------------------- -*/
+
+/* familjen-grotesk-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Familjen Grotesk';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/familjen-grotesk-v8-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* familjen-grotesk-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Familjen Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    src: url('assets/fonts/familjen-grotesk-v8-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* familjen-grotesk-500italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Familjen Grotesk';
+    font-style: italic;
+    font-weight: 500;
+    src: url('assets/fonts/familjen-grotesk-v8-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* familjen-grotesk-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Familjen Grotesk';
+    font-style: normal;
+    font-weight: 700;
+    src: url('assets/fonts/familjen-grotesk-v8-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+  
+  body {
+      font-family: 'Familjen Grotesk';
+  }
+  
+  /* You can now use the 'Roboto' font family throughout your styles */
+  
 @media only screen and (min-width: 0rem) {
     // CS-TODO: Adjust core styles to your liking. It may also be worth adding additional fonts for the header and changing the body font below.
     // This kit has also removed all instances of .cs-button outside of the root sheet, meaning you can change for any of the content flair buttons in one place.
@@ -21,7 +63,7 @@
         /* 60px - 100px top and bottom */
         --sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
 
-        --bodyFontFamily: Arial, Helvetica, sans-serif;
+        --bodyFontFamily: Familjen Grotesk;
     }
 
     body {

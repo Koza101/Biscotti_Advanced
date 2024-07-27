@@ -2,10 +2,9 @@
         "name": "advanced-starter-kit",
         "version": "1.0.0",
         "description": "CodeStitch's Advanced Starter Kit. A kit designed for agency's and freelancers who are knowledgable in HTML, CSS, JS and SSGs, who are wanting to delivery any feature a small to medium business would need",
-        "main": "index.js",
         "scripts": {
-                "build:less": "less-watch-compiler --run-once src/assets/less src/assets/css",
-                "watch:less": "less-watch-compiler src/assets/less src/assets/css",
+                "build:less": "less-watch-compiler --run-once /assets/less /assets/css",
+                "watch:less": "less-watch-compiler /assets/less /assets/css",
                 "watch:cms": "npx decap-server",
                 "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
                 "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve",

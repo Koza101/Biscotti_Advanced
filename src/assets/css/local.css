@@ -749,9 +749,8 @@
     max-width: 80rem;
     gap: 0;
   }
-  /* modify bottom element padding*/
   #why-choose-1657 .cs-content {
-    padding-bottom: 8rem;
+    padding-bottom: 7.5rem;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;

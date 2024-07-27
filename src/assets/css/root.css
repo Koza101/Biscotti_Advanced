@@ -497,6 +497,7 @@ body {
     flex: none;
   }
   #cs-navigation .cs-call .cs-icon {
+    /*width: (24/16rem);*/
     height: auto;
     display: block;
     transition: transform 0.3s;
@@ -810,7 +811,7 @@ body {
     left: 0;
   }
   #cs-navigation .cs-icon {
-    width: 1.5rem;
+    /*width: (24/16rem);*/
     height: auto;
     display: block;
     transition: transform 0.3s;
@@ -973,7 +974,7 @@ body {
     flex: none;
   }
   #cs-navigation .cs-call .cs-icon {
-    width: 1.5rem;
+    /*width: (24/16rem);*/
     height: auto;
     display: block;
     transition: transform 0.3s;

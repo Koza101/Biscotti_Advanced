@@ -1,6 +1,5 @@
 {
     "name": "Biscotti Streetwear",
-    "name": "Code Stitch Web Designs",
     "email": "help@codestitch.app",
     "phoneForTel": "555-123-4567",
     "phoneFormatted": "(555) 123-4567",
@@ -10,24 +9,12 @@
         "city": "St. Johnsbury",
         "state": "VT",
         "zip": "05819",
-        "mapLink": "https://maps.app.goo.gl/uMk4k7pgcoJ6K1B27",
-        "lineOne": "First Address Line",
-        "lineTwo": "Second Address Line",
-        "city": "Denver",
-        "state": "CO",
-        "zip": "80206",
-        "mapLink": "https://goo.gl/maps/UAQn4vuGDiwv7DV39"
+        "mapLink": "https://maps.app.goo.gl/uMk4k7pgcoJ6K1B27"
     },
     "social": {
         "facebook": "https://www.facebook.com/",
         "twitter": "https://twitter.com/",
         "instagram": "https://www.instagram.com/biscottistreetwear/",
         "youtube": "https://www.youtube.com/"
-    },
-    {
-    "domain": "https://www.biscottistreetwear.com",
-        "instagram": "https://www.instagram.com/",
-        "youtube": "https://www.youtube.com/"
     }
-    "domain": "https://www.codestitch.app"
-
+}

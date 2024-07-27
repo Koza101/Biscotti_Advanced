@@ -10,7 +10,6 @@
                 "watch:cms": "npx decap-server",
                 "build:eleventy": "cross-env ELEVENTY_ENV=PROD eleventy",
                 "watch:eleventy": "cross-env ELEVENTY_ENV=DEV eleventy --serve"
-
         },
         "repository": {
                 "type": "git",

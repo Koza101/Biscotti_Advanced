@@ -1,6 +1,6 @@
 {
     "name": "Biscotti Streetwear",
-    "email": "help@codestitch.app",
+    "email": "biscottibrand@gmail.com",
     "phoneForTel": "555-123-4567",
     "phoneFormatted": "(555) 123-4567",
     "address": {
@@ -16,6 +16,5 @@
         "twitter": "https://twitter.com/",
         "instagram": "https://www.instagram.com/biscottistreetwear/",
         "youtube": "https://www.youtube.com/"
-    },
-    "domain": "https://www.biscottistreetwear.com"
+    }
 }

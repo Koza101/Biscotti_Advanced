@@ -8,7 +8,7 @@ local_backend: true
 logo_url: "https://codestitch.app/frontend/images/logo.png"
 
 # Where should uploaded files be saved
-media_folder: src/assets/images/cms
+media_folder: /assets/images/cms
 
 # Where should media be served, relative to the base of the built site
 public_folder: /assets/images/cms

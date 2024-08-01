@@ -5,10 +5,10 @@ backend:
 local_backend: true
 
 # Change url to a link to the image you want to use, no file paths, must be a URL
-logo_url: "https://codestitch.app/frontend/images/logo.png"
+logo_url: "https://biscottistreetwear.netlify.app/assets/images/cms/logo_dark.png"
 
 # Where should uploaded files be saved
-media_folder: src/assets/images/cms
+media_folder: /assets/images/cms
 
 # Where should media be served, relative to the base of the built site
 public_folder: /assets/images/cms

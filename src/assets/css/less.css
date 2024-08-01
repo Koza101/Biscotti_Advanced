@@ -354,3 +354,159 @@
     display: flex;
   }
 }
+/*-- -------------------------- -->
+<---          Gallery           -->
+<--- -------------------------- -*/
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #gallery-1648 {
+    padding: var(--sectionPadding);
+  }
+  #gallery-1648 .cs-container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #gallery-1648 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    /* breaks up the contents so they are no longer considered children of the parent and can now be flexboxed and positioned relatrive to the cs-container so we can place the button at the bototm of the section */
+    display: contents;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #gallery-1648 .cs-title {
+    max-width: 20ch;
+    margin: 0;
+  }
+  #gallery-1648 .cs-button-solid {
+    font-size: 1rem;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-decoration: none;
+    font-weight: 700;
+    white-space: nowrap;
+    text-align: center;
+    margin: 0;
+    color: #fff;
+    min-width: 9.375rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+    z-index: 1;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+  }
+  #gallery-1648 .cs-button-solid:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background: #000;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #gallery-1648 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #gallery-1648 .cs-button-solid {
+    order: 3;
+  }
+  #gallery-1648 .cs-gallery {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  #gallery-1648 .cs-link {
+    height: 17.5rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #gallery-1648 .cs-link:hover .cs-image:before {
+    opacity: 0.5;
+  }
+  #gallery-1648 .cs-link:hover .cs-link-icon {
+    opacity: 1;
+    transform: translateY(0) rotateY(0);
+  }
+  #gallery-1648 .cs-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+  }
+  #gallery-1648 .cs-image:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity 0.3s;
+  }
+  #gallery-1648 .cs-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes it act like a background image */
+    object-fit: cover;
+  }
+  #gallery-1648 .cs-link-icon {
+    opacity: 0;
+    position: relative;
+    z-index: 10;
+    transform: translateY(1.5rem) rotateY(90deg);
+    transition: opacity 0.3s, transform 0.5s;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #gallery-1648 .cs-content {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+  #gallery-1648 .cs-gallery {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  #gallery-1648 .cs-link {
+    width: 100%;
+    /* 240px - 400px */
+    height: clamp(15rem, 30vw, 25rem);
+    aspect-ratio: auto;
+    grid-column: span 3;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #gallery-1648 .cs-title {
+    color: var(--bodyTextColorWhite);
+  }
+}

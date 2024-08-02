@@ -798,12 +798,12 @@
                 /* prevents padding and border from affecting height and width */
                 box-sizing: border-box;
                 padding: (12/16rem);
-                color: var(--bodyTextColor);
+                color: var(--primary);
                 display: block;
                 transition: color 0.3s, background-color 0.3s;
 
                 &:hover {
-                    color: var(--primary);
+                    color: var(--bodyTextColor);
                     background-color: #f7f7f7;
                 }
 
@@ -1075,7 +1075,7 @@
             transition: color 0.3s;
 
             &:hover {
-                color: var(--primary);
+                color: var(--bodyTextColor);
             }
 
             &.cs-active {
@@ -1489,3 +1489,48 @@ body {
     margin: 0;
     color: var(--bodyTextColor);
 }
+
+/* Contact form stitch*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: (4/16rem);
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: (700/16rem);
+    margin: 0 0 (16/16rem) 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: (650/16rem);
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+                

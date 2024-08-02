@@ -1,0 +1,89 @@
+---
+title: "About Page"
+description: "The LESS branch of the advanced starter kit. Provides a LESS processor to provide extra tools and functionality when writing your CSS."
+permalink: 'contact/'
+eleventyNavigation:
+    key: 'Contact'
+    order: '300'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/less.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/less.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- ============================================ -->
+<!--                   Contact                    -->
+<!-- ============================================ -->
+
+<section id="contact-1601">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Contact Us</span>
+            <h2 class="cs-title">Get In Touch</h2>
+            <!--Form-->
+            <form class="cs-form" id="cs-form-1601" name="Contact Form" method="post">
+                <label class="cs-label">
+                    Name
+                    <input class="cs-input" required type="text" id="name-1601" name="name" placeholder="Name">
+                </label>
+                <label class="cs-label cs-email">
+                    Email
+                    <input class="cs-input" required type="email" id="email-1601" name="email" placeholder="Email">
+                </label>
+                <label class="cs-label cs-phone">
+                    Phone
+                    <input class="cs-input" required type="phone" id="phone-1601" name="phone" placeholder="Phone">
+                </label>
+                <label class="cs-label">
+                    Message
+                    <textarea class="cs-input cs-textarea" required name="Message" id="message-1601" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid cs-submit" type="submit">Submit Now</button>
+            </form>
+        </div>
+        <div class="cs-wrapper">
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <span class="cs-header">Our Support</span>
+                    <p class="cs-item-text">
+                        We are available for your 24/7 support.<br>
+                        <a class="cs-link" href="tell:555-555-5555">(555) 555-5555</a>                    
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-header">Email Us</span>
+                    <p class="cs-item-text">
+                        Email your questions at
+                        <a class="cs-link" href="mailto:info@invetexfinance.com">info@invetexfinance.com</a>     
+                    </p>
+                </li>
+                <li class="cs-item">
+                    <span class="cs-header">Reviews</span>
+                    <p class="cs-item-text">
+                        See Our reviews on Google or leave a review
+                        <a href="" class="cs-link">
+                            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/google-1a.svg" alt="icon" loading="lazy" decoding="async" width="16" height="16" aria-hidden="true">
+                            Google Reviews
+                        </a>                   
+                    </p>
+                </li>
+            </ul>
+            <picture class="cs-background">
+                <!--Mobile Image-->
+                <source media="(max-width: 600px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
+                <!--Tablet and above Image-->
+                <source media="(min-width: 601px)" srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg">
+                <img loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/model5.jpg" alt="people" width="522" height="771">
+            </picture>
+        </div>
+    </div>
+</section>
+                                
+
+{% endblock %} 

@@ -7,94 +7,17 @@ eleventyNavigation:
     order: '700'
 ---
 
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/less.css">
+    <link rel="stylesheet" href="/assets/css/root.css">
+    <link rel="stylesheet" href="/assets/css/local.css">
+    <link rel="stylesheet" href="/assets/css/dark.css">
 
+{% endblock %}
 
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-    <head>
-        {#
-        Created with help from the below repo, outlining all the possible tags that could belong in a <head>.
-        View to explore more tags that may be useful, depending on the type of website being built
-        https://github.com/joshbuchea/HEAD
-        #}
+{% extends 'layouts/base.html' %}
 
-        {# CS-TODO: Update the _data/client.json file to automatically generate the correct <head> tags for you: DONE 7/23/24 #}
-
-        <!-- UTF character encoding means all characters under UTF-8, including emojis, render correctly -->
-        <meta charset="UTF-8">
-
-        <!-- Handles favicon filepaths and preloads -->
-        <link rel="icon" href="src\assets\favicons\favicon.ico" />
-
-        <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
-        <link rel="manifest" href="/assets/favicons/site.webmanifest">
-        <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#000000">
-        <link rel="shortcut icon" href="/assets/favicons/favicon.ico">
-        <meta name="msapplication-TileColor" content="#000000">
-        <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
-
-        <!-- handles hosted fonts and preloads -->
-         
-
-        <!-- Ensures the viewport widths are defined correctly and work on all devices (esp. mobile) -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-
-        <!-- May be used in SERP results. Search Engines may also change them, at their discretion. Good to set anyway -->
-        <meta name="description" content="{{ description }}">
-
-        <!-- Identifies eleventy as the generator for this document. Shows in apps like Wappalyzer or BuiltWith. Proves that you're a worthy developer that cares about your product -->
-        <meta name="generator" content="{{ eleventy.generator }}">
-
-        <!-- Open Graph tags to improve how the website shows up on social media -->
-        {# CS-TODO: Change the OG Tags (image, in particular) to something appropriate for your client #}
-        <meta property="og:title" content="Biscotti Streetwear">
-        <meta property="og:description" content="Elevate your wardrobe with versatile fashion pieces that cater to diverse tastes and preferences.">
-        <meta property="og:url" content="https://biscottistreetwear.com{{ page.url }}">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://biscottistreetwear.netlify.app/assets/images/cms/logo_dark.png">
-        <meta property="og:site_name" content="{{ client.name }}">
-        <meta property="og:locale" content="en_US">
-        <meta property="og:image:width" content="1421">
-        <meta property="og:image:height" content="180">
-
-        <!-- Helps prevent duplicate content issues -->
-        <link rel="canonical" href="{{ client.domain }}{{ page.url }}">
-
-        <!-- Sitewide Stylesheets -->
-        <link rel="stylesheet" href="/assets/css/root.css">
-        <link rel="stylesheet" href="/assets/css/dark.css">
-
-        <!-- Sitewide Scripts -->
-        <script src="/assets/js/dark.js" defer></script>
-        <script src="/assets/js/nav.js" defer></script>
-
-        <!-- Shopify Scripts -->
-        <script>
-            window.shopify = window.shopify || {}
-            window.shopify.auth = {
-                store_url: "{{ shopAuth.store_url }}",
-                access_token: "{{ shopAuth.access_token }}",
-                api_verion: "{{ shopAuth.api_verion }}"
-            }
-        </script>
-        <script src="https://sdks.shopifycdn.com/buy-button/2.4.0/buybutton.js" defer></script>
-        <script src="/assets/js/shopify.js" defer></script>
-        <!-- Use a head block in any layout extending from base.html to include page-specific <head> tags. It will be included here -->
-        {# CS-TODO: Contrary to the Intermediate Kit, all preloads will need to be done manually from the pages head block. This is so responsive preloads can be achieved when using the optimization branch #}
-        {# https://web.dev/articles/preload-responsive-images #}
-        {% block head %}{% endblock %}
-
-        <!-- Uses the title directly from the frontmatter of the page -->
-        <title>{{ title }}</title>
-    </head>
-    <body>
-        {% include "components/header.html" %}
-        <main id="main">
-
-
+{% block body %}
             <!-- ============================================ -->
             <!--                   Gallery                    -->
             <!-- ============================================ -->
@@ -106,9 +29,9 @@ eleventyNavigation:
                             <span class="cs-topper">Social</span>
                             <h2 class="cs-title">More from Stitch Store</h2>
                         </div>
-                        <a href="" class="cs-button-solid">
+                        <a href="https://www.instagram.com/biscottistreetwear/?utm_source=ig_embed&amp;utm_campaign=loading" class="cs-button-solid">
                             <img class="cs-button-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/insta-icon.svg" alt="instagram" width="20" height="20">
-                            @Stitch
+                            @biscottistreetwear
                         </a>
                     </div>
                     <div class="cs-gallery">
@@ -155,5 +78,4 @@ eleventyNavigation:
                     </main>
                     {% include "components/footer.html" %}
                 </body>
-            </html>
-                                            
+{% endblock %}                                            

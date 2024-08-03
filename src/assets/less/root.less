@@ -267,7 +267,7 @@
         .cs-logo {
             width: auto;
             /* 24px - 32px */
-            height: clamp(1.5rem, 3vw, 2rem);
+            height: clamp(3.25rem, 3vw, 2rem);
             margin: 0 auto 0 0;
             /* prevents padding and border from affecting height and width */
             box-sizing: border-box;
@@ -601,7 +601,7 @@
 
             .cs-logo {
                 /* makes it white */
-                filter: grayscale(1) brightness(1000%);
+                // filter: grayscale(1) brightness(1000%);
             }
 
             .cs-ul-wrapper {
@@ -837,6 +837,18 @@
             }
         }
     }
+}
+
+body.dark-mode .cs-dark {
+    display: block;
+}
+
+body.dark-mode .cs-light {
+    display: none;
+}
+
+body:not(.dark-mode) .cs-dark {
+    display: none;
 }
 
 /*-- -------------------------- -->

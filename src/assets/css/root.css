@@ -577,9 +577,9 @@ body {
     transition: opacity 0.3s;
   }
   #cs-navigation .cs-drop-icon {
-    width: clamp(1.5rem, 2vw, 1.75rem);
-    height: 1rem;
-    position: relative;
+    width: 0.9375rem;
+    height: auto;
+    position: absolute;
     top: 50%;
     right: -1.25rem;
     transform: translateY(-50%);
@@ -621,9 +621,8 @@ body {
     transform: translateY(0);
   }
   #cs-navigation .cs-drop-icon {
-    width: clamp(1.5rem, 2vw, 1.75rem);
-    height: 1rem;
-    position: relative;
+    width: 0.9375rem;
+    height: auto;
     display: inline-block;
   }
   #cs-navigation .cs-drop-ul {

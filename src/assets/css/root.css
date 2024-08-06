@@ -505,7 +505,7 @@ body {
     /* Ensure fill is set to none */
     stroke: black;
     /* Ensure stroke color is set */
-    stroke-width: 2;
+    stroke-width: 1;
     /* Ensure stroke width is set */
   }
   #cs-navigation .cs-call .cs-info {

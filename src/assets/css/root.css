@@ -497,7 +497,7 @@ body {
     flex: none;
   }
   #cs-navigation .cs-call .cs-icon {
-    /*width: (24/16rem);*/
+    width: 3rem;
     height: auto;
     display: block;
     transition: transform 0.3s;

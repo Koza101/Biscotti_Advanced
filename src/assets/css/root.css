@@ -578,7 +578,7 @@ body {
   }
   #cs-navigation .cs-drop-icon {
     width: 0.9375rem;
-    height: auto;
+    height: "50px";
     position: absolute;
     top: 50%;
     right: -1.25rem;
